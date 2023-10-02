@@ -1,0 +1,17 @@
+{
+  "name": "masterchef-v2",
+  "description": "PancakeSwap MasterChef V2 Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:pancakeswap/pancake-subgraph.git",
+  "author": "PancakeSwap",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "create": "graph create 5dax_masterchef --node https://thegraph.ciaxi.com/deploy/",
+    "create-local": "graph create 5dax_masterchef --node http://127.0.0.1:8020",
+    "deploy": "graph deploy 5dax_masterchef --node https://thegraph.ciaxi.com/deploy/ --ipfs https://thegraph.ciaxi.com/ipfs/",
+    "deploy-local": "graph deploy 5dax_masterchef --node http://127.0.0.1:8020 --ipfs http://127.0.0.1:5001",
+    "remove-local": "graph remove 5dax_masterchef --node http://127.0.0.1:8020"
+  }
+}

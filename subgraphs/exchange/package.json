@@ -1,0 +1,18 @@
+{
+  "name": "exchange",
+  "description": "PancakeSwap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:pancakeswap/pancake-subgraph.git",
+  "author": "PancakeSwap",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "create-subgraph": "graph create secrox/exchange --node https://graph-bridge.ecroxscan.com/deploy/",
+    "deploy": "graph deploy --product hosted-service secrox/exchange --node https://graph-bridge.ecroxscan.com/deploy/ --ipfs https://graph-bridge.ecroxscan.com/ipfs/",
+    "remove-subgraph": "graph remove secrox/exchange --node https://graph-bridge.ecroxscan.com/deploy/",
+    "create-local": "graph create secrox/exchange --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy secrox/exchange --node http://127.0.0.1:8020 --ipfs http://127.0.0.1:5001",
+    "remove-local": "graph remove secrox/exchange --node http://127.0.0.1:8020"
+  }
+}
